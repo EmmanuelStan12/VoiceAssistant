@@ -10,28 +10,6 @@ data class Definition(
     val synonyms: List<String>
 ) {
 
-    fun Definition.toDBEntity(): DefinitionEntity {
-        return DefinitionEntity(
-            definitionId = null,
-            meaningId = null,
-            definition = definition,
-            synonyms = synonyms.joinToString { "," },
-            antonyms = antonyms.joinToString { "," },
-            example = example
-        )
-    }
-
-    fun DefinitionDTO.toDBEntity(): DefinitionEntity {
-        return DefinitionEntity(
-            definitionId = null,
-            meaningId = null,
-            definition = definition,
-            synonyms = synonyms.joinToString { "," },
-            antonyms = antonyms.joinToString { "," },
-            example = example
-        )
-    }
-
     companion object {
         fun fromDTO(dto: DefinitionDTO): Definition {
             return Definition(
@@ -52,4 +30,26 @@ data class Definition(
         }
     }
 
+}
+
+fun Definition.toDBEntity(): DefinitionEntity {
+    return DefinitionEntity(
+        definitionId = null,
+        meaningId = null,
+        definition = definition,
+        synonyms = synonyms.joinToString { "," },
+        antonyms = antonyms.joinToString { "," },
+        example = example
+    )
+}
+
+fun DefinitionDTO.toDBEntity(): DefinitionEntity {
+    return DefinitionEntity(
+        definitionId = null,
+        meaningId = null,
+        definition = definition,
+        synonyms = synonyms.joinToString { "," },
+        antonyms = antonyms.joinToString { "," },
+        example = example
+    )
 }

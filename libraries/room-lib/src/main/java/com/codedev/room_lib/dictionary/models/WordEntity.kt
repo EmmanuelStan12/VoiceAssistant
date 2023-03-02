@@ -27,7 +27,7 @@ data class WordWithProperties(
         entityColumn = "wordId",
         entity = LicenseEntity::class
     )
-    val licenses: List<LicenseEntity>,
+    val license: LicenseEntity,
     @Relation(
         parentColumn = "wordId",
         entityColumn = "wordId",

@@ -4,6 +4,7 @@ import com.codedev.api_lib.dictionary.models.PhoneticDTO
 import com.codedev.api_lib.dictionary.models.WordDTO
 import com.codedev.room_lib.dictionary.models.PhoneticEntity
 import com.codedev.room_lib.dictionary.models.WordEntity
+import com.codedev.room_lib.dictionary.models.WordWithProperties
 
 data class Word(
     val license: License,
@@ -14,19 +15,7 @@ data class Word(
     val word: String,
     val origin: String?
 ) {
-    fun Word.toDBEntity() = WordEntity(
-        word = word,
-        phoneticSymbol = phonetic,
-        origin = origin,
-        sourceUrls = sourceUrls.joinToString { "," }
-    )
 
-    fun WordDTO.toDBEntity() = WordEntity(
-        word = word,
-        phoneticSymbol = phonetic,
-        origin = origin,
-        sourceUrls = sourceUrls.joinToString { "," }
-    )
 
     companion object {
         fun fromDTO(dto: WordDTO) = Word (
@@ -39,11 +28,28 @@ data class Word(
             origin = null
         )
 
-        fun fromEntity(entity: WordEntity) = WordEntity (
-            sourceUrls = entity.sourceUrls,
-            word = entity.word,
+        fun fromEntity(entity: WordWithProperties) = Word (
+            sourceUrls = entity.word.sourceUrls?.split(",") ?: emptyList(),
+            word = entity.word.word,
             origin = null,
-            phoneticSymbol = entity.phoneticSymbol
+            phonetic = entity.word.phoneticSymbol,
+            license = License.fromEntity(entity.license),
+            meanings = entity.meanings.map { Meaning.fromEntity(it) },
+            phonetics = entity.phonetics.map { Phonetic.fromEntity(it) }
         )
     }
 }
+
+fun WordDTO.toDBEntity() = WordEntity(
+    word = word,
+    phoneticSymbol = phonetic,
+    origin = null,
+    sourceUrls = sourceUrls.joinToString { "," }
+)
+
+fun Word.toDBEntity() = WordEntity(
+    word = word,
+    phoneticSymbol = phonetic,
+    origin = origin,
+    sourceUrls = sourceUrls.joinToString { "," }
+)

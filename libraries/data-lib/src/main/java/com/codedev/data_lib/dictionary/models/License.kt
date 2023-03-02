@@ -8,19 +8,6 @@ data class License(
     val name: String,
     val url: String
 ) {
-    fun License.toDBEntity(): LicenseEntity {
-        return LicenseEntity(
-            name = name,
-            url = url
-        )
-    }
-
-    fun LicenseDTO.toDBEntity(): LicenseEntity {
-        return LicenseEntity(
-            name = name,
-            url = url
-        )
-    }
 
     companion object {
         fun fromDTO(dto: LicenseDTO): License {
@@ -37,4 +24,18 @@ data class License(
             )
         }
     }
+}
+
+fun License.toDBEntity(): LicenseEntity {
+    return LicenseEntity(
+        name = name,
+        url = url
+    )
+}
+
+fun LicenseDTO.toDBEntity(): LicenseEntity {
+    return LicenseEntity(
+        name = name,
+        url = url
+    )
 }

@@ -11,19 +11,6 @@ data class Meaning(
     val partOfSpeech: String,
     val synonyms: List<String>
 ) {
-    fun Meaning.toDBEntity(): MeaningEntity {
-        return MeaningEntity(
-            partOfSpeech = partOfSpeech,
-            synonyms = synonyms.joinToString { "," },
-            antonyms = antonyms.joinToString { "," }
-        )
-    }
-
-    fun MeaningDTO.toDBEntity() = MeaningEntity(
-        partOfSpeech = partOfSpeech,
-        synonyms = synonyms.joinToString { "," },
-        antonyms = antonyms.joinToString { "," }
-    )
 
     companion object {
         fun fromDTO(dto: MeaningDTO) = Meaning(
@@ -41,3 +28,17 @@ data class Meaning(
         )
     }
 }
+
+fun Meaning.toDBEntity(): MeaningEntity {
+    return MeaningEntity(
+        partOfSpeech = partOfSpeech,
+        synonyms = synonyms.joinToString { "," },
+        antonyms = antonyms.joinToString { "," }
+    )
+}
+
+fun MeaningDTO.toDBEntity() = MeaningEntity(
+    partOfSpeech = partOfSpeech,
+    synonyms = synonyms.joinToString { "," },
+    antonyms = antonyms.joinToString { "," }
+)
