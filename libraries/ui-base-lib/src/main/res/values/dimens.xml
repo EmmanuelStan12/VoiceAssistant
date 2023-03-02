@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_item_radius">16dp</dimen>
+    <dimen name="btn_pink_selector_radius">32dp</dimen>
+    <dimen name="iv_selector_radius">32dp</dimen>
+    <dimen name="curved_top_radius">24dp</dimen>
+    <dimen name="btn_action_radius">32dp</dimen>
+    <dimen name="llc_selector_radius">32dp</dimen>
+    <dimen name="header_font_size">16sp</dimen>
+    <dimen name="et_height">55dp</dimen>
+    <dimen name="btn_height">55dp</dimen>
+    <dimen name="iv_padding">10dp</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upgrade_text">Complete ‘Free Upgrade’ to start receiving Pickup Requests and delivering parcels for Real Money!</string>
+    <string name="upgrade_text_2">Complete your account profile</string>
+    <string name="availability_text">I\'m Unavailable today for insta Same-Day deliveries</string>
+    <string name="invite_all_text"><u>Invite all</u></string>
+
+    <string name="message">Connect with a delivery partner and get
+        \nyour items and goods delivered in no timer</string>
+    <string name="forgot_password_message">Re-enter the OTP" we sent to phone number to authenticate this process.</string>
+    <string name="find_out_message">Find out locations state we \noperate and our policies</string>
+    <string name="account_message">To change information, please contact \ncustomer service</string>
+    <string name="upgrade_message">Upgrade to delivery partner</string>
+    <string name="complete_info_message">Please Complete the following to proceed</string>
+    <string name="subtitle_1">Connect with a delivery partner, get your items, goods, etc., picked up &amp; delivered right on time, every time</string>
+    <string name="subtitle_2">Connect with neighbors and businesses near you, help pickup &amp; deliver their packages and get paid ‘in-app’ instantly</string>
+    <string name="subtitle_3">Sign up and create a parcel pickup request, invite friends and family to do the same, to earn points. </string>
+
+    <string name="anonymous_upgrade_text">Complete “Free Upgrade” to DP\nstatus now</string>
+    <string name="how_to_make_money_on_freexit">How do you make money on FreeXit? It’s easy! You create your daily, weekly and monthly route (this means places and locations you go regularly or few times) you get a request to pickup parcel, deliver within those routes you created, and then get paid. By doing so you become a Delivery Partner. Follow through the process and enjoy the experience.</string>
+    <string name="monthly_route_desc">You receive request on the colored dates. You can adjust the date(s) or day(s) in the map</string>
+    <string name="anonymous_phone_number_description">To Notify you via text, once this Request is matched to a Delivery Partner (DP), please input your mobile phone number</string>
+    <string name="anonymous_v_no_description">Please enter the 4-digit code sent to you\nat +2349012345678</string>
+    <string name="anonymous_route_desc">To start receiving pickup request and\ndelivering parcel on this route. Upgrade to\nDelivery partner (DP) status.</string>
+    <string name="freexit_string">FreeXiT</string>
+
+</resources>
