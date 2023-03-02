@@ -19,5 +19,6 @@ include(":libraries:api-lib")
 include(":libraries:data-lib")
 include(":libraries:utils-lib")
 include(":libraries:ui-base-lib")
+include(":libraries:speech-recognition-lib")
 
 include(":features:base")
