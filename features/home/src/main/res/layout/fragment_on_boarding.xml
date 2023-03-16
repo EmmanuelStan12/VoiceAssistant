@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_dark_background">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@id/iv_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+        android:layout_margin="16dp"
+        android:paddingHorizontal="24dp"
+        android:text="Skip"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/color_text_white"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_basic"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_on_boarding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dots_indicator"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:paddingVertical="16dp"
+        android:layout_marginBottom="16dp"
+        app:dotsColor="@color/color_light_grey"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
+        app:selectedDotColor="@color/colorPrimary"
+        app:progressMode="true"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_forward"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/dots_indicator"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_fab"
+        android:tag="ACTIVE"
+        android:src="@drawable/ic_forward"/>
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_forward"
+        app:layout_constraintBottom_toBottomOf="@id/dots_indicator"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_fab"
+        android:tag="INACTIVE"
+        android:src="@drawable/ic_arrow_back"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

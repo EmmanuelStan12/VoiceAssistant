@@ -19,11 +19,14 @@ object Dependencies {
 
     private val compose_v = "1.3.1"
     val composeui = "androidx.compose.ui:ui:$compose_v"
+    val composeactivity = "androidx.activity:activity-compose:$compose_v"
     val composematerial = "androidx.compose.material:material:$compose_v"
     val composepreview = "androidx.compose.ui:ui-tooling-preview:$compose_v"
     val composejunit = "androidx.compose.ui:ui-test-junit4:$compose_v"
     val composetooling = "androidx.compose.ui:ui-tooling:$compose_v"
     val composeicons = "androidx.compose.material:material-icons-extended:$compose_v"
+
+    val composenavigation = "androidx.navigation:navigation-compose:2.5.1"
 
     private val lifecycle_compose_v = "2.5.1"
     val lifecycleruntime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_compose_v"
@@ -39,6 +42,8 @@ object Dependencies {
     val accompanistpager = "com.google.accompanist:accompanist-pager:0.25.1"
     val accompanistpagerindicators = "com.google.accompanist:accompanist-pager-indicators:0.25.0"
 
+    val splashscreen = "androidx.core:core-splashscreen:1.1.0-alpha01"
+
     private val ktor_v = "2.0.2"
     val ktorclientcore = "io.ktor:ktor-client-core:$ktor_v"
     val ktorclientcio = "io.ktor:ktor-client-cio:$ktor_v"
@@ -50,7 +55,7 @@ object Dependencies {
     val logbackclassic = "ch.qos.logback:logback-classic:1.2.11"
 
     val coroutinecore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
-    val coroutineandroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+//    val coroutineandroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
     val coroutinetest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1"
 
     val coilcompose = "io.coil-kt:coil-compose:2.2.1"
@@ -66,9 +71,13 @@ object Dependencies {
     val cardview = "androidx.cardview:cardview:1.0.0"
     val drawerlayout = "androidx.drawerlayout:drawerlayout:1.1.1"
 
+    val fragmentnavigation = "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    val navigationui = "androidx.navigation:navigation-ui-ktx:2.5.3"
+
     val javax = "javax.inject:javax.inject:1"
 
     val lifecycle_extensions = "android.arch.lifecycle:extensions:1.1.1"
+    val dotsindicator = "com.tbuonomo:dotsindicator:4.3"
 
     private val lifecycle_v = "2.4.0"
     val lifecycle_viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_v"

@@ -1,27 +1,12 @@
 <resources>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="upgrade_text">Complete ‘Free Upgrade’ to start receiving Pickup Requests and delivering parcels for Real Money!</string>
-    <string name="upgrade_text_2">Complete your account profile</string>
-    <string name="availability_text">I\'m Unavailable today for insta Same-Day deliveries</string>
-    <string name="invite_all_text"><u>Invite all</u></string>
-
-    <string name="message">Connect with a delivery partner and get
-        \nyour items and goods delivered in no timer</string>
-    <string name="forgot_password_message">Re-enter the OTP" we sent to phone number to authenticate this process.</string>
-    <string name="find_out_message">Find out locations state we \noperate and our policies</string>
-    <string name="account_message">To change information, please contact \ncustomer service</string>
-    <string name="upgrade_message">Upgrade to delivery partner</string>
-    <string name="complete_info_message">Please Complete the following to proceed</string>
-    <string name="subtitle_1">Connect with a delivery partner, get your items, goods, etc., picked up &amp; delivered right on time, every time</string>
-    <string name="subtitle_2">Connect with neighbors and businesses near you, help pickup &amp; deliver their packages and get paid ‘in-app’ instantly</string>
-    <string name="subtitle_3">Sign up and create a parcel pickup request, invite friends and family to do the same, to earn points. </string>
-
-    <string name="anonymous_upgrade_text">Complete “Free Upgrade” to DP\nstatus now</string>
-    <string name="how_to_make_money_on_freexit">How do you make money on FreeXit? It’s easy! You create your daily, weekly and monthly route (this means places and locations you go regularly or few times) you get a request to pickup parcel, deliver within those routes you created, and then get paid. By doing so you become a Delivery Partner. Follow through the process and enjoy the experience.</string>
-    <string name="monthly_route_desc">You receive request on the colored dates. You can adjust the date(s) or day(s) in the map</string>
-    <string name="anonymous_phone_number_description">To Notify you via text, once this Request is matched to a Delivery Partner (DP), please input your mobile phone number</string>
-    <string name="anonymous_v_no_description">Please enter the 4-digit code sent to you\nat +2349012345678</string>
-    <string name="anonymous_route_desc">To start receiving pickup request and\ndelivering parcel on this route. Upgrade to\nDelivery partner (DP) status.</string>
-    <string name="freexit_string">FreeXiT</string>
-
+    <string name="boarding_description">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</string>
+    <string name="welcome_description">Welcome to our platform! We\'re excited to have you join us. This is the beginning of a new journey that will empower you to achieve your goals and fulfill your dreams. We\'ve designed this platform to make your experience seamless, intuitive, and enjoyable. Before we get started, we\'d like to take a few minutes to guide you through our onboarding process. This will help you get familiar with our platform, its features, and how to use them effectively.</string>
+    <string name="dictionary_description"> We\'re thrilled to have you here. Our dictionary is your go-to resource for learning new words, expanding your vocabulary, and improving your language skills. To get started, simply type in the word you want to look up in the search bar, and our dictionary will provide you with its definition, usage examples, synonyms, and more.</string>
+    <string name="translation_description"> Our translator is your one-stop solution for translating text from one language to another quickly and accurately. Our translator will provide you with the translated text in seconds, along with pronunciation guides, synonyms, and more.</string>
+    <string name="ai_description">Our AI chat is a powerful tool that allows you to communicate with an intelligent machine and get instant responses to your questions and inquiries. Our AI chat is powered by the latest natural language processing technology, which means that it can understand and respond to your queries in a human-like manner.</string>
+    <string name="welcome_message">
+        Welcome to your new voice assistant! We\'re thrilled to have you here. Our voice assistant is designed to make your life easier by providing you with quick and convenient access to information and services.
+        \tThank you for choosing our voice assistant, and we\'re excited to be a part of your daily routine!
+        \tHere are some of our services…
+    </string>
 </resources>

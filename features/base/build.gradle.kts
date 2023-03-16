@@ -29,14 +29,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    viewBinding {
-        android.buildFeatures.viewBinding = true
+    buildFeatures {
+        viewBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Dependencies.kce_version
     }
 
-}
-
-android.buildTypes.forEach { type ->
-    type.buildConfigField("String", "APP_ID","\"com.freexitnow.freexit\"" )
 }
 
 dependencies {
@@ -52,5 +52,10 @@ dependencies {
     api(Dependencies.timber)
     api(Dependencies.dagger)
     kapt(Dependencies.dagger_kapt)
+    implementation(Dependencies.composematerial)
+    implementation(Dependencies.composeui)
+    implementation(Dependencies.composenavigation)
+    api(Dependencies.composepreview)
+    api(Dependencies.composetooling)
 
 }

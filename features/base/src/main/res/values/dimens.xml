@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sp_body1">16sp</dimen>
+    <dimen name="sp_h1">32sp</dimen>
+    <dimen name="sp_h2">24sp</dimen>
+    <dimen name="sp_caption">8sp</dimen>
+    <dimen name="sp_h3">22sp</dimen>
+    <dimen name="sp_h4">20sp</dimen>
+    <dimen name="sp_body2">14sp</dimen>
+</resources>

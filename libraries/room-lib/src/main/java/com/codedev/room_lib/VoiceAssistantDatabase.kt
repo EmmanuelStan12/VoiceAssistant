@@ -5,8 +5,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.codedev.room_lib.dictionary.DictionaryDao
+import com.codedev.room_lib.dictionary.models.*
 
-@Database(entities = [], version = 1)
+@Database(
+    entities = [
+        DefinitionEntity::class,
+        LicenseEntity::class,
+        MeaningEntity::class,
+        PhoneticEntity::class,
+        WordEntity::class
+    ],
+    version = 1
+)
 abstract class VoiceAssistantDatabase: RoomDatabase() {
 
     abstract val dictionaryDao: DictionaryDao

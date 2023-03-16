@@ -44,19 +44,19 @@ class DictionaryRepository(
 
         val (license, meanings, _, phonetics, _, _, _) = word
 
-        val wordId = dictionaryDao.insert(word.toDBEntity()).toInt()
+        val wordId = dictionaryDao.insertWord(word.toDBEntity()).toInt()
 
-        dictionaryDao.insert(license.toDBEntity().copy(wordId = wordId))
+        dictionaryDao.insertLicense(license.toDBEntity().copy(wordId = wordId))
 
         phonetics.map {
-            dictionaryDao.insert(it.toDBEntity().copy(wordId = wordId))
+            dictionaryDao.insertPhonetic(it.toDBEntity().copy(wordId = wordId))
         }
 
         meanings.map { meaning ->
-            val meaningId = dictionaryDao.insert(meaning.toDBEntity().copy(wordId = wordId)).toInt()
+            val meaningId = dictionaryDao.insertMeaning(meaning.toDBEntity().copy(wordId = wordId)).toInt()
 
             meaning.definitions.map { definition ->
-                dictionaryDao.insert(definition.toDBEntity().copy(meaningId = meaningId))
+                dictionaryDao.insertDefinition(definition.toDBEntity().copy(meaningId = meaningId))
             }
         }
     }

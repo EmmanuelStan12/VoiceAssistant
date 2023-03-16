@@ -37,14 +37,29 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    viewBinding {
-        android.buildFeatures.viewBinding = true
+    buildFeatures {
+        viewBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Dependencies.kce_version
     }
 }
 
 dependencies {
 
+    implementation(project(mapOf("path" to ":features:base")))
+    implementation(project(mapOf("path" to ":features:home")))
+    implementation(project(mapOf("path" to ":features:dictionary")))
+    implementation(project(mapOf("path" to ":libraries:ui-base-lib")))
     implementation(Dependencies.core)
     implementation(Dependencies.appcompat)
     implementation(Dependencies.timber)
+    implementation(Dependencies.material)
+
+    implementation(Dependencies.material)
+    implementation(Dependencies.appcompat)
+    implementation(Dependencies.constraintlayout)
+    implementation(Dependencies.fragmentnavigation)
+    implementation(Dependencies.navigationui)
 }

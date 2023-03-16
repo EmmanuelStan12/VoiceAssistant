@@ -22,3 +22,5 @@ include(":libraries:ui-base-lib")
 include(":libraries:speech-recognition-lib")
 
 include(":features:base")
+include(":features:home")
+include(":features:dictionary")
